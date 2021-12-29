@@ -219,3 +219,23 @@ INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
 
 SELECT * FROM dept_info;
+
+--Create new table with sales retirement info only(emp no, emp fn, emp ln, emp dn) joining ret.info and dept.info
+SELECT retirement_info.emp_no, retirement_info.first_name, retirement_info.last_name, dept_name
+INTO sales_emp
+FROM retirement_info
+LEFT JOIN dept_info
+ON retirement_info.emp_no = dept_info.emp_no
+WHERE dept_info.dept_name = ('Sales');
+
+SELECT * FROM sales_emp;
+
+--Create table as above with both sales and development team retirees
+SELECT retirement_info.emp_no, retirement_info.first_name, retirement_info.last_name, dept_info.dept_name
+INTO dev_sales_emp
+FROM retirement_info
+LEFT JOIN dept_info
+ON retirement_info.emp_no = dept_info.emp_no
+WHERE dept_name IN ('Sales', 'Development');
+
+SELECT * FROM dev_sales_emp;
