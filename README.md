@@ -58,3 +58,18 @@ ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 
 ![Unique Titles](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/unique_titles.png)
 
+* A retiring titles table was created to contain the number of titles filled by employees who are retiring:
+
+```
+--Create retiring employees table - retiring titles
+SELECT ut.count, rt.title
+INTO retiring_titles
+FROM unique_titles as ut
+LEFT JOIN retirement_titles as rt
+ON ut.emp_no = rt.emp_no
+GROUP BY rt.title 
+ORDER BY ut.count DESC;
+```
+![Retiring Titles](![Unique Titles](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/unique_titles.png)
+
+
