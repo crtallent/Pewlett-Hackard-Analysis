@@ -23,9 +23,12 @@ After compiling the employee information including the number of employees reach
 
 The first step in this process was to determine the number of retiring employees by title.  
 
-* There are 90,398 employees retiring from Pewlett-Hackard within the next few years, as they were born between 1952 and 1955
+* There are 90,398 employees retiring from Pewlett-Hackard within the next few years, as they were born between 1952 and 1955.
 
 ![Retiring Employees](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/retirement_titles.png)
 
 
-* Upon further analysis, employees were duplicated when they changed position titles.  Once filtered, this number was reduced to 54,047
+* Upon further analysis, employees were duplicated when they changed position titles.  A new table was created with unique titles.
+
+![Unique Titles](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/unique_titles.png)
+
