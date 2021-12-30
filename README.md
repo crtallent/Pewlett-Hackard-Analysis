@@ -72,7 +72,7 @@ ORDER BY ut.count DESC;
 ```
 ![Retiring Titles](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/retiring_titles.png)
 
-* A list of employees eligible for the mentorship program, born in 1965 was created to prepare for the next "boom" of retirees:
+* A list of employees eligible for the mentorship program, born in 1965 was created to train new staff coming into the positions vacated by the retirees:
 
 ```
 -- Create membership_eligibility table
@@ -95,4 +95,11 @@ WHERE (de.to_date = '9999-01-01')
 ORDER BY e.emp_no;	
 ```
 ![Eligible Mentors](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/mentorship_elig.png)
+
+## Summary
+
+There are 54,047 employees that will be retiring from Pewlett-Hackard within the next few years, including senior-level employees and managers across the company. When looking at the employees that are eligible for the mentorship program, we can see that there are 1,549 employees that were born in 1965.  Further analysis would need to be completed to determine if the eligible staff are working in the same departments as the retiring staff are vacating.  Additionally, since this number is only 2.8% of the potentially open positions, it may be necessary to filter the criteria to include additional staff born prior to 1965.  As we can see from the sales and development departments only, there are 15,141 employees retiring.  We will need to ensure that some of the mentors are in these departments:
+
+![Sales and Dev Employees](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/sales_dev_emp.png)
+
 
