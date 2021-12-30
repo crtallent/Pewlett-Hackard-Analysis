@@ -72,4 +72,27 @@ ORDER BY ut.count DESC;
 ```
 ![Retiring Titles](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/retiring_titles.png)
 
+* A list of employees eligible for the mentorship program, born in 1965 was created to prepare for the next "boom" of retirees:
+
+```
+-- Create membership_eligibility table
+SELECT DISTINCT ON (e.emp_no)
+    e.emp_no,
+    e.first_name,
+    e.last_name,
+    e.birth_date,
+	de.from_date,
+	de.to_date,
+	t.title
+INTO mentorship_eligibility
+FROM employees as e
+INNER JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles as t
+ON (e.emp_no = t.emp_no)
+WHERE (de.to_date = '9999-01-01')
+    AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY e.emp_no;	
+```
+![Eligible Mentors](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/mentorship_elig.png)
 
