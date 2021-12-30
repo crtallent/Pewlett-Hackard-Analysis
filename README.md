@@ -70,6 +70,6 @@ ON ut.emp_no = rt.emp_no
 GROUP BY rt.title 
 ORDER BY ut.count DESC;
 ```
-![Retiring Titles](![Unique Titles](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/retiring_titles.png)
+![Retiring Titles](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/retiring_titles.png)
 
 
