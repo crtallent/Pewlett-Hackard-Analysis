@@ -13,3 +13,19 @@ Pewlett-Hackard is a company concerned with the number of employees that will so
 As outlined above, a lot of data is available and much of it is duplicated.  In order to aggregate the data to provide concise information, it was necessary to create a database that would store joined information.  Joining the information into one database would allow specific data to be pulled to prepare for the onslaught of retirees and new positions that would be created.
 
 ![Pewlett-Hackard Employee Data](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/EmployeeDB.png.png)
+
+
+## Resources
+- Software: PostgreSQL 12, pgAdmin4
+
+## Pewlett-Hackard Analysis Results (Provide bulleted list with four major points from the two analysis deliverables.  Use images.)
+After compiling the employee information including the number of employees reaching retirement age, the numbers were staggering.  In order to prepare for the imminent retirement of over 90,000 employees born between 1952 and 1955, it was decided to create a mentorship program so that eligible employees could train newer employees prior to their retirement.  This required getting information for employees born in 1965 as well, so that these employees could mentor newer employees prior to their retirement.
+
+The first step in this process was to determine the number of retiring employees by title.  
+
+* There are 90,398 employees retiring from Pewlett-Hackard within the next few years, as they were born between 1952 and 1955
+
+![Retiring Employees](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/retirement_titles.png)
+
+
+* Upon further analysis, employees were duplicated when they changed position titles.  Once filtered, this number was reduced to 54,047
