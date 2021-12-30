@@ -102,4 +102,8 @@ There are 54,047 employees that will be retiring from Pewlett-Hackard within the
 
 ![Sales and Dev Employees](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/sales_dev_emp.png)
 
+In addition to the sales and development departments, there are seven other departments at Pewlett-Hackard.  Further analysis should be completed to determine how many mentors the company will need to ensure maximum success in their mentorship program, and to be prepared for future retirement booms.
+
+![Departments](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/departments.png)
+
 
