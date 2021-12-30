@@ -23,7 +23,21 @@ After compiling the employee information including the number of employees reach
 
 The first step in this process was to determine the number of retiring employees by title.  
 
-* There are 90,398 employees retiring from Pewlett-Hackard within the next few years, as they were born between 1952 and 1955.
+* There are 90,398 employees retiring from Pewlett-Hackard within the next few years, as they were born between 1952 and 1955. A table was created to show this information as seen below:
+
+```
+--Retrieve emp_no, f_n, and l_n columns from emp table.
+SELECT DISTINCT ON (e.emp_no) e.emp_no, e.first_name, e.last_name, t.title, t.from_date, t.to_date
+INTO retirement_titles
+FROM employees AS e
+JOIN titles AS t
+ON (t.emp_no=e.emp_no)
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER by e.emp_no, t.title DESC;
+--SELECT 41380
+--Query returned successfully in 199 msec.
+SELECT * FROM retirement_titles;
+```
 
 ![Retiring Employees](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/retirement_titles.png)
 
