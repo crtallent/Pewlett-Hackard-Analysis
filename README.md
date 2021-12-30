@@ -42,7 +42,19 @@ SELECT * FROM retirement_titles;
 ![Retiring Employees](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/retirement_titles.png)
 
 
-* Upon further analysis, employees were duplicated when they changed position titles.  A new table was created with unique titles.
+* Upon further analysis, employees were duplicated when they changed position titles.  A new table was created with unique titles:
+
+```
+-- Use Dictinct with Orderby to remove duplicate rows
+SELECT DISTINCT ON (retirement_titles.emp_no) retirement_titles.emp_no,
+retirement_titles.first_name,
+retirement_titles.last_name,
+retirement_titles.title
+INTO unique_titles
+FROM retirement_titles
+WHERE (to_date = '9999-01-01')
+ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
+```
 
 ![Unique Titles](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/unique_titles.png)
 
