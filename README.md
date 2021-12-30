@@ -19,7 +19,7 @@ As outlined above, a lot of data is available and much of it is duplicated.  In 
 - Software: PostgreSQL 12, pgAdmin4
 
 ## Pewlett-Hackard Analysis Results 
-After compiling the employee information including the number of employees reaching retirement age, the numbers were staggering.  In order to prepare for the imminent retirement of over 90,000 employees born between 1952 and 1955, it was decided to create a mentorship program so that eligible employees could train newer employees prior to their retirement.  This required getting information for employees born in 1965 as well, so that these employees could mentor newer employees prior to their retirement.  The queries constructed to create the tables can be found [here](https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/Queries/Query/Employee_Database_Challenge.sq1.sql)
+After compiling the employee information including the number of employees reaching retirement age, the numbers were staggering.  In order to prepare for the imminent retirement of over 90,000 employees born between 1952 and 1955, it was decided to create a mentorship program so that eligible employees could train newer employees prior to their retirement.  This required getting information for employees born in 1965 as well, so that these employees could mentor newer employees prior to their retirement.  The queries constructed to create the tables can be found [here].(https://github.com/crtallent/Pewlett-Hackard-Analysis/blob/main/Analysis%20Project%20Folder/Pewlett-Hackard-Analysis%20Folder/Queries/Query/Employee_Database_Challenge.sq1.sql)
 
 The first step in this process was to determine the number of retiring employees by title.  
 
